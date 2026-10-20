@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MELS Storybook</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">MELS <span>STORIES</span></a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="themeBtn" class="theme-btn"> Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO BINI STORIES</p>
+        <h1>Every Story Has a <span>Heartbeat.</span></h1>
+        <p>
+          Discover stories about love, friendship, mystery,
+          fantasy, adventure, and the magic of imagination.
+        </p>
+        <a href="#stories" class="primary-btn">Explore Stories →</a>
+      </div>
+
+
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">OUR LITTLE LIBRARY</p>
+        <h2>About MELS Stories</h2>
+        <p>
+          MELS Stories is a Wattpad-inspired storybook website
+          where readers can explore different genres and enjoy
+          unique stories. Choose a book, discover its synopsis,
+          and start reading its first chapter.
+        </p>
+      </div>
+    </section>
+
+    <section class="stories" id="stories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+          <h2>Explore Our Stories</h2>
+          <p class="muted">Thirty stories. Different worlds. Endless imagination.</p>
+        </div>
+        <span id="bookCount" class="book-count">30 Stories</span>
+      </div>
+
+      <div class="filters">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search story title or author..."
+          aria-label="Search stories">
+
+        <select id="genreFilter" aria-label="Filter by genre">
+          <option value="All">All Genres</option>
+          <option>Romance</option>
+          <option>Fantasy</option>
+          <option>Mystery</option>
+          <option>Horror</option>
+          <option>Adventure</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+          <option>Science Fiction</option>
+          <option>Action</option>
+          <option>Slice of Life</option>
+        </select>
+      </div>
+
+      <div id="storyContainer" class="story-container"></div>
+      <p id="emptyMessage" class="empty-message" hidden>
+        No stories found. Try another title or genre.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>MELS Stories | A world made of words and imagination.</p>
+    <p>© <span id="year"></span> MELS Stories. All rights reserved.</p>
+    <button id="topBtn" class="top-btn">↑ Back to Top</button>
+  </footer>
+
+</body>
+</html>
